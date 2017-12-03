@@ -1,14 +1,4 @@
-# vwre
-
-> vue wre
-
-## Storybook
-
-```bash
-# run storybook
-npm run storybook
-http://localhost:9001/
-```
+# Vuetify-Storybook-boilerplate
 
 ## Build Setup
 
@@ -20,10 +10,18 @@ npm install
 npm run dev
 
 # build for production with minification
-npm run build
+npm run bui
+
+## Storybook
+
+```bash
+# run storybook
+npm run storybook
+http://localhost:9001/
+```
+
+ld
 ```
 
 For detailed explanation on how things work, consult the
 [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-# vwre
