@@ -11,10 +11,18 @@
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
-    "vue": "^2.5.8"
+    "vue": "^2.5.9"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "devDependencies": {
+    "@storybook/addon-actions": "^3.2.16",
+    "@storybook/addon-knobs": "^3.2.16",
+    "@storybook/addon-links": "^3.2.16",
+    "@storybook/addon-notes": "^3.2.16",
     "@storybook/vue": "^3.2.16",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -24,7 +32,7 @@
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
     "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
+    "vue-template-compiler": "^2.5.9",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
   }

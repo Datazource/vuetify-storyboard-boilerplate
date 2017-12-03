@@ -6,7 +6,7 @@
 
 # run storybook
 
-`npm run storybook`
+`npm run storybook` [storybook](http://localhost:9001/)
 
 ## Build Setup
 
