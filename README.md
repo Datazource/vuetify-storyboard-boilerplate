@@ -10,8 +10,10 @@ npm install
 npm run dev
 
 # build for production with minification
-npm run bui
+npm run build
 ```
+For detailed explanation on how things work, consult the
+[docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## Storybook
 
@@ -20,7 +22,15 @@ npm run bui
 npm run storybook
 http://localhost:9001/
 ```
+# Resources
 
+## Storybook Resources
 
-For detailed explanation on how things work, consult the
-[docs for vue-loader](http://vuejs.github.io/vue-loader).
+Storybook for Vue
+https://storybook.js.org/basics/guide-vue/
+
+VueNYC - A Short Synopsis of Vue Storybook - Erin Depew
+https://www.youtube.com/watch?v=qcSEIH5iexc
+
+## Vuetify
+https://github.com/vuetifyjs/vuetify
