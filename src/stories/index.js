@@ -3,7 +3,13 @@ import { storiesOf } from "@storybook/vue";
 import MyButton from "./Button.vue";
 import { linkTo } from "@storybook/addon-links";
 
+import Layout from "./Layout.vue";
 import Welcome from "./Welcome.vue";
+
+storiesOf("Layout", module).add("with text", () => ({
+  components: { Layout, MyButton },
+  template: '<layout><my-button :rounded="true">rounded</my-button></layout>'
+}));
 
 storiesOf("Welcome", module).add("to Storybook", () => ({
   components: { Welcome },
