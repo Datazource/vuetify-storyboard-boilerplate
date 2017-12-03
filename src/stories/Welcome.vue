@@ -10,6 +10,13 @@
     <p>
       This is a UI component dev environment for your app.
     </p>
+
+    <p>The repo for this project exists here
+       <a class="link" href="https://github.com/white-rabbit-japan/vuetify-storyboard-boilerplate" target="_blank" rel="noopener noreferrer">
+        vuetify-storyboard-boilerplate
+      </a>
+    </p>
+
     <p>
       We've added some basic stories inside the
       
