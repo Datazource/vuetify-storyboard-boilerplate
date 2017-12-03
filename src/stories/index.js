@@ -1,15 +1,10 @@
 import Vue from "vue";
 import { storiesOf } from "@storybook/vue";
-import MyButton from "./Button.vue";
 import { linkTo } from "@storybook/addon-links";
 
-import Layout from "./Layout.vue";
 import Welcome from "./Welcome.vue";
-
-storiesOf("Layout", module).add("with text", () => ({
-  components: { Layout, MyButton },
-  template: '<layout><my-button :rounded="true">rounded</my-button></layout>'
-}));
+import MyButton from "./Button.vue";
+import Layout from "./Layout.vue";
 
 storiesOf("Welcome", module).add("to Storybook", () => ({
   components: { Welcome },
@@ -19,13 +14,25 @@ storiesOf("Welcome", module).add("to Storybook", () => ({
 
 storiesOf("Button", module)
   .add("button template", () => ({
-    template: `<my-button :rounded="true">rounded</my-button>`
+    template: '<my-button :rounded="true">round</my-button>'
   }))
-  .add("story as a component", () => ({
+  .add("rounded button", () => ({
     components: { MyButton },
     template: '<my-button :rounded="true">rounded</my-button>'
   }))
   .add("normal button", () => ({
     components: { MyButton },
     template: '<my-button :rounded="false">normal</my-button>'
+  }));
+
+storiesOf("Layout", module)
+  .add("with button", () => ({
+    components: { Layout, MyButton },
+    template:
+      '<layout><my-button :rounded="false">my button</my-button></layout>'
+  }))
+  .add("with button rounded", () => ({
+    components: { Layout, MyButton },
+    template:
+      '<layout><my-button :rounded="true">my button</my-button></layout>'
   }));

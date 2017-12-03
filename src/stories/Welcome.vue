@@ -1,5 +1,11 @@
+<!DOCTYPE html>
 <template>
-  <div class="main">
+<v-app>
+  <v-navigation-drawer app></v-navigation-drawer>
+  <v-toolbar app></v-toolbar>
+  <v-content>
+    <v-container fluid>
+      <div class="main">
     <h1>Welcome to STORYBOOK</h1>
     <p>
       This is a UI component dev environment for your app.
@@ -44,6 +50,12 @@
        to add webpack loaders and plugins you are using in this project.
     </p>
   </div>
+
+    </v-container>
+  </v-content>
+  <v-footer app></v-footer>
+</v-app>
+
 </template>
 
 <script>
