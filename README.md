@@ -4,7 +4,7 @@ DEMO
 https://white-rabbit-japan.github.io/vuetify-storyboard-boilerplate/
 
 ## About Storybook
-Storybook for Vue is a UI development environment for UI components. It allows interactive development, testing and shareing of UI  components in various property states.
+Storybook for Vue is a UI development environment for UI components. It allows interactive development, testing and sharing of UI components in various property states.
 
 Storybook runs outside of your app. So you can develop UI components in isolation without worrying about app specific dependencies and requirements.
 
@@ -14,7 +14,7 @@ Vuetify is a semantic component framework for Vue. It aims to provide clean, sem
 Vuetify combines the power of Vue and Material Design to provide a beautifully crafted library of components. Created according to Google's Material Design Spec, Vuetify components feature an easy-to-remember semantic design that shifts remembering complex classes and markup, to type-as-you speak properties that have simple and clear names.
 
 ## Getting Started
-Clone this repo to explore out it's put together. Use it as a boilerplate for creating and testing your own Material Design layouts and components with Vuetify.
+Clone this repo to explore how it's put together. Use it as a boilerplate for creating and testing your own Material Design layouts and components with Vuetify.
 
 ## Build Setup
 
