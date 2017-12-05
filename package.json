@@ -15,7 +15,11 @@
     "vue": "^2.5.9",
     "vuetify": "^0.17.3"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.16",
     "@storybook/addon-knobs": "^3.2.16",

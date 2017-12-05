@@ -1,11 +1,4 @@
 <template>
-<html>
-  <head>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet"/>
-    <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet"/>
-  </head>
-  <body>
-
   <v-app id="inspire" dark>
     <v-navigation-drawer
       clipped
@@ -14,23 +7,29 @@
       app
     >
       <v-list dense>
-        <v-list-tile @click="">
-          <v-list-tile-action>
-            <v-icon>dashboard</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>Dashboard</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile @click="">
-          <v-list-tile-action>
-            <v-icon>settings</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>Settings</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
+          <v-list-group v-for="item in items" :value="item.active" v-bind:key="item.title">
+            <v-list-tile slot="item" @click="">
+              <v-list-tile-action>
+                <v-icon>{{ item.action }}</v-icon>
+              </v-list-tile-action>
+              <v-list-tile-content>
+                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+              </v-list-tile-content>
+              <v-list-tile-action>
+                <v-icon v-if="item.items">keyboard_arrow_down</v-icon>
+              </v-list-tile-action>
+            </v-list-tile>
+            <v-list-tile v-for="subItem in item.items" v-bind:key="subItem.title" @click="">
+              <v-list-tile-content>
+                <v-list-tile-title>{{ subItem.title }}</v-list-tile-title>
+              </v-list-tile-content>
+              <v-list-tile-action>
+                <v-icon>{{ subItem.action }}</v-icon>
+              </v-list-tile-action>
+            </v-list-tile>
+          </v-list-group>
       </v-list>
+
     </v-navigation-drawer>
     <v-toolbar app fixed clipped-left>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
@@ -41,8 +40,7 @@
     <v-layout row wrap>
       <v-flex xs12>
         <v-card dark color="primary">
-          <v-card-text class="px-0">                      <slot/>
-</v-card-text>
+          <v-card-text class="px-0"><slot/></v-card-text>
         </v-card>
       </v-flex>
     </v-layout></v-container>
@@ -63,8 +61,6 @@
       <span>&copy; 2017</span>
     </v-footer>
   </v-app>
-  </body>
-</html>
 </template>
 
 <script>
@@ -75,7 +71,12 @@ export default {
     drawer: null
   }),
   props: {
+    items: Array,
     source: String
   }
 };
 </script>
+
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons");
+</style>
